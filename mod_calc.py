@@ -27,4 +27,4 @@ def calc(action, kind):
         elif sign == "/":
             answer = first_num / second_num
 
-    return 
+    return
