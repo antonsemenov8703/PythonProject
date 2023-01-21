@@ -58,7 +58,7 @@
 
 # Новое решение
 
-def get_num(x, y):
+def is_number_div(x, y):
     if y == '0':
         return False
     while True:
@@ -73,7 +73,15 @@ def get_num(x, y):
 
 # x = input('x = ')
 # y = input('y = ')
-# print(get_num(x, y))
+# print(is_number_div(x, y))
 
+
+def is_number_all(x, y):
+    while True:
+        try:
+            float(x), float(y)
+            return True
+        except ValueError:
+            return False
 
 
