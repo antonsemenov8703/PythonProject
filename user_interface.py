@@ -1,3 +1,5 @@
+# код от Елены
+
 import mod_calc as c
 def get_numder():
     while True:
