@@ -1,3 +1,5 @@
+# Код Ирины
+
 
 # Проверка для деления с 0
 # Заходят два значения как строки
@@ -83,6 +85,27 @@ def is_number_all(x, y):
             return True
         except ValueError:
             return False
+        
+ 
+def check_complex1 ():
+    n = input ('Enter real part: ')
+    while not n.isdigit():
+        print ('Error')
+        n = input ('Enter once again: ')
+    return int (n)
+
+def check_complex2 ():
+    n = input ('Enter imaginary number: ')
+    while not n.isdigit():
+        print ('Error')
+        n = input ('Enter once again: ')
+    return int (n)
+
+# Ввод каждой части комплексного числа осуществляется следующим образом:
+# a = check_complex1()
+# b = check_complex2()
+# num = complex (a, b)
+# print (num)
 
 
 # Проверка комплексных чисел:
