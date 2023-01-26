@@ -108,3 +108,29 @@ def check_complex2 ():
 # print (num)
 
 
+# Проверка комплексных чисел:
+# 1. Нельзя использовать //, %
+# 2. Нельзя пользоваться функцией sqrt
+
+
+# Проверка ввода комплексного числа
+
+def check_complex1 ():
+    n = input ('Enter real part: ')
+    while not n.isdigit():
+        print ('Error')
+        n = input ('Enter once again: ')
+    return int (n)
+
+def check_complex2 ():
+    n = input ('Enter imaginary number: ')
+    while not n.isdigit():
+        print ('Error')
+        n = input ('Enter once again: ')
+    return int (n)
+
+# Ввод каждой части комплексного числа осуществляется следующим образом:
+# a = check_complex1()
+# b = check_complex2()
+# num = complex (a, b)
+# print (num)

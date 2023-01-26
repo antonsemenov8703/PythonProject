@@ -1,4 +1,5 @@
 # код от Елены
+from excep import check_complex1, check_complex2
 
 import mod_calc as c
 def get_numder():
@@ -46,10 +47,10 @@ def menu_rat():
                 print('Error')
                 break
 def menu_com():
-    n = get_numder()
-    n1 = get_numder()
-    n2 = get_numder()
-    n3 = get_numder()
+    n = check_complex1()
+    n1 = check_complex2()
+    n2 = check_complex1()
+    n3 = check_complex2()
     nn = complex(n,n1)
     mm = complex(n2,n3)
     while True:
